@@ -1,0 +1,462 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cuprum',Helvetica,Arial,Lucida,sans-serif;
+}
+.index{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "presentacion presentacion campeonatos"
+    "pilotos pilotos campeonatos"
+    "footer footer footer"
+    ;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 12vh 50% 35% 5vh;
+}
+.header{
+    grid-area: header;
+    align-items: center;
+    display: flex;
+    background: linear-gradient(to left, #7CDA24, white);
+}
+.header__a{
+    width: 50%;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+.header__nav{
+    width: 50%;
+    justify-content: flex-end;
+    text-align: end;
+    padding-right: 10px;
+}
+.header__nav--ul--li{
+    padding: 0px 10px;
+    display: inline;
+    font-size: 23px;
+}
+.header__nav--ul--li--a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgb(255, 255, 255);
+}
+.presentacion{
+    grid-area: presentacion;
+    background-image: url(assets/imagenes/LomaBackground.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.presentacion__div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+iframe{
+    display: block;
+    width: 50%;
+    height: 40vh;
+    margin: 0px auto;
+}
+.presentacion__article{
+    display: block;
+    text-align: center;
+    background-color: #282828;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 60px;
+    margin: 30px 0;
+}
+.pilotos{
+    grid-area: pilotos;
+}
+.pilotos__div{
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pilotos__h3{
+    display: block;
+    text-align: center;
+    color: white;
+    background-color: #282828;
+    font-size: 30px;
+}
+.pilotos__div--img{
+    width: 18%;
+    border: solid 2px black;
+    transition: all 0.5s
+}
+.pilotos__div--img:hover{
+    transform: scale(1.1);
+}
+.competencias{
+    grid-area: campeonatos;
+    padding: 10px 40px;
+}
+.nacionales{
+    padding: 30px;
+}
+.internacionales{
+    padding: 30px;
+}
+.campeonatos__h2{
+    font-size: 160%;
+}
+.campeonatos__ul--li{
+    padding: 5px;
+    font-size: 125%;
+}
+.vuelosbiplazas{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "español ingles"
+    "fotos fotos"
+    "contactanos contactanos"
+    "servicios servicios"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 12vh 30% 32vh 10% 12% 5vh;
+    grid-row-gap: 10px;
+}
+.vuelosb__esp{
+    grid-area: español;
+    border: solid 3px #7CDA24 ;
+}
+.vuelosb__ing{
+    grid-area: ingles;
+    border: solid 3px #7CDA24 ;
+}
+.vuelosb__h2{
+    font-size: 225%;
+    border: solid 2px #7CDA24 ;
+    text-align: center;
+}
+.vuelosb__p{
+    font-size: 170%;
+    padding: 10px;
+    text-align: center;
+}
+.fotos{
+    grid-area: fotos;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.vuelosb__img{
+    width: 30%;
+    height: 32vh;
+    padding: 5px;
+    margin: 10px;
+    border: solid 3px #7CDA24 ;
+}
+#vuelosb__a{
+    grid-area: contactanos;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 250%;
+}
+#vuelosb__a:hover{
+    color: #7CDA24;
+}
+.servicios{
+    grid-area: servicios;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.nosotros{
+    text-align: center;
+    background-image: url(assets/imagenes/loma-bolaback.jpg);
+    background-size: cover;
+}
+.nosotros__quien{
+    margin: 18px 0px;
+    padding: 15px 0px;
+    border-top: solid 4px greenyellow;
+    border-bottom: solid 4px greenyellow;
+}
+.nosotros__quien--h2{
+    font-size: 30px;
+    padding: 10px;
+}
+.nosotros__quien--p{
+    font-size: 24px;
+}
+.nosotros__donde{
+    margin: 18px 0px;
+    padding: 15px 0px;
+    border-top: solid 4px greenyellow;
+    border-bottom: solid 4px greenyellow;
+}
+.nosotros__donde--h2{
+    font-size: 30px;
+    padding: 10px;
+}
+.nosotros__donde--p{
+    font-size: 24px;
+}
+.nosotros__donde--iframe{
+    width: 50%;
+    height: 35vw;
+}
+.reserva{
+    text-align: center;
+    padding: 20%;
+    background-image: url(assets/imagenes/backgroundle.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.reserva__h2{
+    padding: 100px 40px 20px 40px;
+    background-color: rgba(172, 255, 47, 0.562);
+}
+.reserva__form{
+    background-color: rgba(172, 255, 47, 0.562);
+    padding: 20px 40px 100px 40px;
+}
+input{
+    padding: 6px 20px;
+    margin: 5px 10px;
+}
+textarea{
+    width: 529px;
+    height: 90px;
+}
+.footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-top: solid 5px #7CDA24;
+}
+.footer img,h3{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+@media screen and (max-width: 1024px){
+    .index{
+        grid-template-rows: 15vh 60% 30% 5vh;
+    }
+    .competencias{
+        padding: 5px 20px;
+    }
+    .nacionales{
+        padding: 15px;
+    }
+    .internacionales{
+        padding: 15px;
+    }
+    .campeonatos__h2{
+        font-size: 120%;
+    }
+    .campeonatos__ul--li{
+        padding: 3px;
+        font-size: 90%;
+    }
+    .vuelosbiplazas{
+        grid-template-rows: 15vh 30% 32vh 10% 20% 5vh;
+        grid-row-gap: 5px;
+    }
+    .vuelosb__esp{
+        border: solid 2px #7CDA24 ;
+    }
+    .vuelosb__ing{
+        border: solid 2px #7CDA24 ;
+    }
+    .vuelosb__h2{
+        font-size: 150%;
+        border: solid 1px #7CDA24 ;
+    }
+    .vuelosb__p{
+        font-size: 100%;
+        padding: 5px;
+    }
+    .vuelosb__img{
+        padding: 3px;
+        margin: 5px;
+        border: solid 2px #7CDA24 ;
+    }
+    .vuelosb__a{
+        font-size: 175%;
+}
+}
+@media screen and (max-width: 768px){
+    .index{
+        grid-template-rows: 15vh 55% 25% 5vh;
+    }
+    .header__a{
+        width: 40vw;
+    }
+    .header img{
+        width: 33vw;
+    }
+    .header__nav{
+        width: 59vw;
+    }
+    iframe{
+        width: 70%;
+        height: 30vh;
+    }
+    .campeonatos__h2{
+        font-size: 100%;
+    }
+    .campeonatos__ul--li{
+        padding: 3px;
+        font-size: 90%;
+    }
+    .vuelosbiplazas{
+        grid-template-rows: 15vh 30% 21vh 10% 20% 5vh;
+        grid-row-gap: 5px;
+    }
+    .vuelosb__h2{
+        font-size: 95%;
+    }
+    .vuelosb__p{
+        font-size: 90%;
+    }
+    .vuelosb__img{
+        height: 20vh;
+    }
+    .vuelosb__servicios{
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .index{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "presentacion presentacion"
+        "pilotos pilotos"
+        "campeonatos campeonatos"
+        "footer footer"
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 12vh 17% 67% 17% 5vh;
+    }
+    .header__a{
+        width: 30vw;
+        padding-left: 2px;
+    }
+    .header__nav{
+        width: 70vw;
+        padding-right: 2px;
+    }
+    .header__nav--ul--li{
+        padding: 0px 1px;
+        font-size: 12px;
+    }
+    .presentacion__div{
+        padding: 10px 0;
+    }
+    iframe{
+        width: 80%;
+        height: 40vh;
+    }
+    .presentacion__article{
+        font-size: 10px;
+        padding: 15px 20px;
+        margin: 20px 0;
+    }
+    .pilotos__div{
+        height: 90%;
+    }
+    .pilotos__h3{
+        font-size: 30px;
+    }
+    .pilotos__div--img{
+        width: 70%;
+        border: solid 2px black;
+        margin: 2px auto;
+    }
+    .competencias{
+        border: solid 2px #7CDA24;
+        padding: 2px 10px;
+        margin-bottom: 5px ;
+    }
+    .nacionales{
+        padding: 6px;
+    }
+    .internacionales{
+        padding: 6px;
+    }
+    .campeonatos__h2{
+        font-size: 70%;
+    }
+    .campeonatos__ul--li{
+        padding: 1px;
+        font-size: 60%;
+    }
+    .vuelosbiplazas{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "español"
+        "ingles"
+        "fotos"
+        "contactanos"
+        "servicios"
+        "footer";
+        grid-template-columns: 1fr ;
+        grid-template-rows: 12vh 20% 20% 50% 10% 10% 5vh;
+        grid-row-gap: 2px;
+    }
+    .vuelosb__esp{
+        border: solid 2px #7CDA24 ;
+    }
+    .vuelosb__ing{
+        border: solid 2px #7CDA24 ;
+    }
+    .vuelosb__h2{
+        font-size: 100%;
+        border: solid 2px #7CDA24 ;
+    }
+    .vuelosb__p{
+        font-size: 80%;
+        padding: 2px;
+    }
+    .vuelosb__img{
+        width: 70%;
+        height: 32vh;
+        padding: 1px;
+        margin: 3px auto;
+        border: solid 2px #7CDA24 ;
+    }
+    .vuelosb__a{
+        height: 100%;
+        font-size: 100%;
+    }
+    .vuelosb__servicios{
+        width: 20vw;
+    }
+    .footer{
+        border-top: solid 1px #7CDA24;
+        height: 100%;
+    }
+    .footer img,h3{
+        padding: 2px;
+        font-size: 50%;
+    }
+}
