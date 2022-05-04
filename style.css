@@ -80,10 +80,9 @@ nav{
     color: #7CDA24;
 }
 .carousel-item img{
-    max-width: 1000px;
+    max-width: 600px;
 }
 .pilotos__div--img{
-    max-width: 700px;
 }
 .servicios{
     grid-area: servicios;
