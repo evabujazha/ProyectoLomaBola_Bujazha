@@ -101,9 +101,10 @@ nav{
     padding: 0px 10px;
 }
 .compartiimg{
-    max-width: 300px;
+    max-width: 320px;
     display: block;
     margin: 0 auto;
+    padding: 10px;
 }
 @media screen and (min-width:1600px){
     .presentacion iframe{
