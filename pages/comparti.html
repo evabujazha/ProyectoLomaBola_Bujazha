@@ -11,9 +11,10 @@
     <link rel="stylesheet" id="et-builder-googlefonts-css" href="http://fonts.googleapis.com/css?family=Abel:400|Cuprum:400,400italic,700italic,700&amp;subset=latin,latin-ext" type="text/css" media="all">
     <link rel="stylesheet" href="../style.css">
     <title>Loma Bola</title>
-    <link rel="icon" type="image/jpg" href="../assets/imagenes/Logo footer.png"/>
+    <link rel="icon" type="image/jpg" href="assets/imagenes/Logo footer.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<body class="contacto">
+<body class="index">
     <header class="header">
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <a class="navbar-brand" href="../index.html">
@@ -33,29 +34,76 @@
                 <li class="nav-item">
                     <a class="nav-link" href="nosotros.html">Nosotros</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="comparti.html">Comparti tu experiencia!</a>
-                </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="contacto.html">Contacto<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="comparti.html">Comparti tu experiencia!<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
                 </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <section class="reserva">
-        <h2 class="reserva__h2">Reserva tu lugar!</h2>
-        <form action="#" class="reserva__form">
-            <input type="text" placeholder="Nombre" class="reserva__form--input">
-            <input type="email" placeholder="Correo electronico" class="reserva__form--input">
-            <input type="number" placeholder="Numero de telefono" class="reserva__form--input"><br>
-            <label for="Mensaje" class="reserva__form--label">
-                <textarea placeholder="Mensaje" class="reserva__form--label--textarea"></textarea>
-            </label><br>
-            <input type="submit" value="Enviar" class="reserva__form--input">
-        </form>
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Compartí tu experiencia con los demás!</h1>
+                <p class="lead text-muted">Si te gusto una foto que te tomaste mientras volabas la podes subir acá asi los demas pueden ver de lo que se trata el parapente.</p>
+                <p>
+                    <a href="#" class="btn btn-primary my-2">Subí tu foto acá</a>
+                </p>
+            </div>
+        </div>
     </section>
-    <div class="container">
+    
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="../assets/imagenes/vuelo1.png" alt="Vuelo1" class="compartiimg">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="../assets/imagenes/vuelo2.png" alt="Vuelo2" class="compartiimg">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="../assets/imagenes/vuelo3.png" alt="Vuelo3" class="compartiimg">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="../assets/imagenes/vuelo4.png" alt="Vuelo4" class="compartiimg">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="../assets/imagenes/vuelo5.png" alt="Vuelo5" class="compartiimg">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="../assets/imagenes/vuelo6.png" alt="Vuelo6" class="compartiimg">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="../assets/imagenes/vuelo7.png" alt="Vuelo7" class="compartiimg">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="../assets/imagenes/vuelo8.png" alt="Vuelo8" class="compartiimg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" id="footer">
         <footer class="d-flex flex-nowrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="col-md-6 d-flex align-items-center">
                 <span class="text-muted">&copy; By Evaristo Bujazha / Loma Bola</span>
