@@ -1,0 +1,32 @@
+@mixin centrar {
+    display: block;
+    margin: 0 auto;
+}
+.reserva{
+    text-align: center;
+    padding: 10%;
+    background-image: url(../assets/imagenes/backgroundle.jpg);
+    background-size: cover;
+    background-position: center;
+    h2{
+        padding: 60px 40px 60px 40px;
+        background-color: rgba(172, 255, 47, 0.562);
+    }
+    form{
+        background-color: rgba(172, 255, 47, 0.562);
+        padding: 20px 40px 100px 40px;
+        @include centrar;
+    }
+    input{
+        padding: 6px 20px;
+        margin: 5px 10px;
+        textarea{
+            width: 529px;
+            height: 90px;
+            @include centrar;
+        }
+    }
+}
+
+
+

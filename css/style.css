@@ -1,116 +1,137 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Cuprum',Helvetica,Arial,Lucida,sans-serif;
-}
-.header{
-    grid-area: header;
-    z-index: 1000;
-}
-nav{
-    background: linear-gradient(to left, #7CDA24, white);
-}
-#imgnav{
-    width: 20vw;
-}
-.nav-link{
-    color: #282828;
-    font-size: 20px;
-}
-.presentacion{
-    grid-area: presentacion;
-}
-.presentacion iframe{
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Cuprum',Helvetica,Arial,Lucida,sans-serif; }
+
+header {
+  grid-area: header;
+  z-index: 1000; }
+  header nav {
+    background: linear-gradient(to left, #7CDA24, white); }
+    header nav img {
+      width: 20vw; }
+    header nav .nav-link {
+      color: #282828;
+      font-size: 20px; }
+
+.presentacion {
+  grid-area: presentacion; }
+  .presentacion iframe {
     z-index: 100;
-    margin: auto; 
-    display: block;
-}
-.presentacion__div--iframe{
-    width: 70vw;
-    height: 50vh;
-}
-.pilotos{
-    padding-bottom: 20px;
-}
-.pilotos h3{
-    text-align: center;
-}
-#myCarousel{
-    border: solid 3px #282828;
-}
-.carousel-item img{
-    margin: auto; 
-    display: block;
-    }
-.competencias{
-    display: grid;
-    grid-template-areas:
-    "nacionales internacionales"
-    ;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr;
-    border: solid 3px #7CDA24;
-}
-.nacionales{
-    padding: 6px;
-}
-.internacionales{
-    padding: 6px;
-}
-.campeonatos__h2{
-    font-size: 3.5vh;
-}
-.campeonatos__ul--li{
-    padding: 1px;
-    font-size: 3vh;
-}
-#vuelosb__a{
-    grid-area: contactanos;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 150%;
-    padding: 15px;
-}
-#vuelosb__a:hover{
-    color: #7CDA24;
-}
-.carousel-item img{
-    max-width: 600px;
-}
-.servicios{
-    grid-area: servicios;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-}
-.vuelosb__servicios{
-    width: 87px;
-}
-#footer{
-    grid-area: footer;
-}
-.footer__img{
-    padding: 0px 10px;
-}
-.compartiimg{
-    max-width: 320px;
     display: block;
     margin: 0 auto;
-    padding: 10px;
-}
-@media screen and (min-width:1600px){
-    .presentacion iframe{
-        width: 55%;
-    }
-    .campeonatos__h2{
-        font-size: 3vh;
-    }
-    .campeonatos__ul--li{
-        padding: 3px;
-        font-size: 2.5vh;
-    }
-}
+    width: 70vw;
+    height: 50vh; }
+
+.pilotos {
+  padding-bottom: 20px; }
+  .pilotos h3 {
+    text-align: center; }
+  .pilotos #myCarousel {
+    border: solid 3px #282828; }
+    .pilotos #myCarousel img {
+      display: block;
+      margin: 0 auto; }
+
+.competencias {
+  display: grid;
+  grid-template-areas: "nacionales internacionales";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  border: solid 3px #7CDA24; }
+  .competencias div {
+    padding: 6px; }
+    .competencias div h2 {
+      font-size: 3.5vh; }
+    .competencias div ul li {
+      padding: 1px;
+      font-size: 3vh; }
+
+#vuelosb__a {
+  grid-area: contactanos;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150%;
+  padding: 15px; }
+  #vuelosb__a:hover {
+    color: #7CDA24; }
+
+.carousel-item img {
+  max-width: 600px;
+  display: block;
+  margin: 0 auto; }
+
+.servicios {
+  grid-area: servicios;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly; }
+  .servicios img {
+    width: 87px; }
+
+.compartiimg {
+  max-width: 320px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px; }
+
+.reserva {
+  text-align: center;
+  padding: 10%;
+  background-image: url(../assets/imagenes/backgroundle.jpg);
+  background-size: cover;
+  background-position: center; }
+  .reserva h2 {
+    padding: 60px 40px 60px 40px;
+    background-color: rgba(172, 255, 47, 0.562); }
+  .reserva form {
+    background-color: rgba(172, 255, 47, 0.562);
+    padding: 20px 40px 100px 40px;
+    display: block;
+    margin: 0 auto; }
+  .reserva input {
+    padding: 6px 20px;
+    margin: 5px 10px; }
+    .reserva input textarea {
+      width: 529px;
+      height: 90px;
+      display: block;
+      margin: 0 auto; }
+
+.nosotros {
+  text-align: center;
+  background-image: url(../assets/imagenes/loma-bolaback.jpg);
+  background-size: cover; }
+
+.nosotros__quien, .nosotros__donde {
+  margin: 18px 0px;
+  padding: 15px 0px;
+  border-top: solid 4px greenyellow;
+  border-bottom: solid 4px greenyellow; }
+  .nosotros__quien h2, .nosotros__donde h2 {
+    font-size: 30px;
+    padding: 10px; }
+  .nosotros__quien p, .nosotros__donde p {
+    font-size: 24px; }
+
+.nosotros__donde iframe {
+  width: 50%;
+  height: 35vw; }
+
+#footer {
+  grid-area: footer; }
+  #footer img {
+    padding: 0px 20px; }
+
+@media screen and (min-width: 1600px) {
+  .presentacion iframe {
+    width: 55%; }
+  .campeonatos__h2 {
+    font-size: 3vh; }
+  .campeonatos__ul--li {
+    padding: 3px;
+    font-size: 2.5vh; } }

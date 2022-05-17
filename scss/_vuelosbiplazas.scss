@@ -1,0 +1,36 @@
+$estilos:(
+green :#7CDA24,
+grey :  #282828,
+);
+@mixin centrar {
+    display: block;
+    margin: 0 auto;
+}
+#vuelosb__a{
+    grid-area: contactanos;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    padding: 15px;
+    &:hover{
+        color: map-get($estilos,green);
+    }
+}
+
+.carousel-item img{
+    max-width: 600px;
+    @include centrar;
+}
+
+.servicios{
+    grid-area: servicios;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    img{
+        width: 87px;
+    }
+}

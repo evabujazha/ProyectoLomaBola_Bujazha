@@ -1,0 +1,26 @@
+.nosotros{
+    text-align: center;
+    background-image: url(../assets/imagenes/loma-bolaback.jpg);
+    background-size: cover;
+}
+.nosotros__quien{
+    margin: 18px 0px;
+    padding: 15px 0px;
+    border-top: solid 4px greenyellow;
+    border-bottom: solid 4px greenyellow;
+        h2{
+            font-size: 30px;
+            padding: 10px;
+        }
+        p{
+            font-size: 24px;
+        }
+}
+
+.nosotros__donde{
+    @extend .nosotros__quien;
+        iframe{
+            width: 50%;
+            height: 35vw;
+        }
+}

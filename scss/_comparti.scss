@@ -1,0 +1,14 @@
+$estilos:(
+green :#7CDA24,
+grey :  #282828,
+);
+
+@mixin centrar {
+    display: block;
+    margin: 0 auto;
+}
+.compartiimg{
+    max-width: 320px;
+    @include centrar;
+    padding: 10px;
+}

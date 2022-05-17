@@ -1,0 +1,52 @@
+$estilos:(
+green :#7CDA24,
+grey :  #282828,
+);
+@mixin centrar {
+    display: block;
+    margin: 0 auto;
+}
+.presentacion{
+    grid-area: presentacion;
+        iframe{
+            z-index: 100;
+            @include centrar;
+            width: 70vw;
+            height: 50vh;
+        }
+    }
+
+.pilotos{
+    padding-bottom: 20px;
+        h3{
+            text-align: center;
+        }
+        #myCarousel{
+            border: solid 3px map-get($estilos,grey);
+            img{
+                @include centrar;
+            }
+    }
+}
+
+.competencias{
+    display: grid;
+    grid-template-areas:
+    "nacionales internacionales"
+    ;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr;
+    border: solid 3px map-get($estilos,green);
+        div{
+            padding: 6px;
+                h2{
+                    font-size: 3.5vh;
+                }
+                ul{
+                    li{
+                        padding: 1px;
+                        font-size: 3vh;
+                    }
+                }
+        }
+}

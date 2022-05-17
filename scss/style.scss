@@ -1,0 +1,55 @@
+$estilos:(
+green :#7CDA24,
+grey :  #282828,
+);
+@mixin centrar {
+    display: block;
+    margin: 0 auto;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cuprum',Helvetica,Arial,Lucida,sans-serif;
+}
+header{
+    grid-area: header;
+    z-index: 1000;
+        nav{
+            background: linear-gradient(to left, map-get($estilos,green), white);
+            img{
+                width: 20vw;
+            }
+            .nav-link{
+                color: map-get($estilos,grey);
+                font-size: 20px;
+            }
+        }
+}
+
+@import "index";
+@import "vuelosbiplazas";
+@import "comparti";
+@import "contacto";
+@import "nosotros";
+
+#footer{
+    grid-area: footer;
+    img{
+        padding: 0px 20px;
+    }
+}
+
+
+@media screen and (min-width:1600px){
+    .presentacion iframe{
+        width: 55%;
+    }
+    .campeonatos__h2{
+        font-size: 3vh;
+    }
+    .campeonatos__ul--li{
+        padding: 3px;
+        font-size: 2.5vh;
+    }
+}
