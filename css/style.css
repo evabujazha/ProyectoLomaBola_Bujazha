@@ -39,7 +39,8 @@ header {
   grid-template-areas: "nacionales internacionales";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  border: solid 3px #7CDA24; }
+  border: solid 3px #7CDA24;
+  padding-left: 20px; }
   .competencias div {
     padding: 6px; }
     .competencias div h2 {
@@ -101,6 +102,11 @@ header {
       height: 90px;
       display: block;
       margin: 0 auto; }
+  .reserva label textarea {
+    min-width: 44vw;
+    min-height: 10vh;
+    display: block;
+    margin: 0 auto; }
 
 .nosotros {
   text-align: center;
@@ -114,18 +120,24 @@ header {
   border-bottom: solid 4px greenyellow; }
   .nosotros__quien h2, .nosotros__donde h2 {
     font-size: 30px;
-    padding: 10px; }
+    padding: 10px;
+    text-shadow: 0px 0px 3px white; }
   .nosotros__quien p, .nosotros__donde p {
-    font-size: 24px; }
+    font-size: 24px;
+    text-shadow: 0px 0px 3px white; }
+
+.nosotros__donde h3 {
+  padding-top: 5px;
+  text-shadow: 0px 0px 3px white; }
 
 .nosotros__donde iframe {
   width: 50%;
   height: 35vw; }
 
-#footer {
+footer {
   grid-area: footer; }
-  #footer img {
-    padding: 0px 20px; }
+  footer img {
+    padding: 0px 10px; }
 
 @media screen and (min-width: 1600px) {
   .presentacion iframe {
@@ -136,7 +148,7 @@ header {
     padding: 3px;
     font-size: 2.5vh; } }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   header nav img {
     width: 50vw; }
   iframe {
@@ -144,15 +156,11 @@ header {
   .competencias {
     display: block; }
   .servicios img {
-    width: 75px; } }
+    width: 75px; }
+  input {
+    max-width: 50vw; } }
 
 @media screen and (max-width: 1024px) {
-  .nosotros h2 {
-    box-sizing: content-box;
-    background-color: white; }
-  .nosotros h3 {
-    box-sizing: content-box;
-    background-color: white; }
-  .nosotros p {
-    box-sizing: content-box;
-    background-color: white; } }
+  .nosotros__donde iframe {
+    width: 80vw;
+    height: 30vh; } }

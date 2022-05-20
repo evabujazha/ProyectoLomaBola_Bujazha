@@ -11,14 +11,20 @@
         h2{
             font-size: 30px;
             padding: 10px;
+            text-shadow: 0px 0px 3px white;
         }
         p{
             font-size: 24px;
+            text-shadow: 0px 0px 3px white;
         }
 }
 
 .nosotros__donde{
     @extend .nosotros__quien;
+        h3{
+            padding-top: 5px;
+            text-shadow: 0px 0px 3px white;
+        }
         iframe{
             width: 50%;
             height: 35vw;

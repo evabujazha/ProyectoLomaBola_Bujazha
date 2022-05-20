@@ -26,6 +26,11 @@
             @include centrar;
         }
     }
+    label textarea{
+        min-width: 44vw;
+        min-height: 10vh;
+        @include centrar()
+    }
 }
 
 

@@ -33,10 +33,10 @@ header{
 @import "contacto";
 @import "nosotros";
 
-#footer{
+footer{
     grid-area: footer;
     img{
-        padding: 0px 20px;
+        padding: 0px 10px;
     }
 }
 
@@ -73,21 +73,16 @@ header{
             width: 75px;
         }
     }
+    input{
+        max-width: 50vw;
+    }
 }
 
 @media screen and (max-width:1024px){
-.nosotros{
-    h2{
-        box-sizing: content-box;
-        background-color: white;
-    }
-    h3{
-        box-sizing: content-box;
-        background-color: white;
-    }
-    p{
-        box-sizing: content-box;
-        background-color: white;
+.nosotros__donde{
+    iframe{
+        width: 80vw;
+        height: 30vh;
     }
 }
 }

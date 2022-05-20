@@ -37,6 +37,7 @@ grey :  #282828,
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr;
     border: solid 3px map-get($estilos,green);
+    padding-left: 20px;
         div{
             padding: 6px;
                 h2{
