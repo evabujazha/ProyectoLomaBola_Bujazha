@@ -43,10 +43,10 @@ header {
   .competencias div {
     padding: 6px; }
     .competencias div h2 {
-      font-size: 3.5vh; }
+      font-size: 2.5vh; }
     .competencias div ul li {
       padding: 1px;
-      font-size: 3vh; }
+      font-size: 2vh; }
 
 #vuelosb__a {
   grid-area: contactanos;
@@ -135,3 +135,24 @@ header {
   .campeonatos__ul--li {
     padding: 3px;
     font-size: 2.5vh; } }
+
+@media screen and (max-width: 425px) {
+  header nav img {
+    width: 50vw; }
+  iframe {
+    max-height: 220px; }
+  .competencias {
+    display: block; }
+  .servicios img {
+    width: 75px; } }
+
+@media screen and (max-width: 1024px) {
+  .nosotros h2 {
+    box-sizing: content-box;
+    background-color: white; }
+  .nosotros h3 {
+    box-sizing: content-box;
+    background-color: white; }
+  .nosotros p {
+    box-sizing: content-box;
+    background-color: white; } }
